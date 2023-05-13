@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#000000;
+    color: #ffffff;
+}
+#header {
+    width: 100%;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+}
+
+.container {
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+i {
+    font-size: 30px;
+    color: #ff5656;
+    border-radius: 50%;
+}
+
+.link {
+    margin-top: 4px;
+    text-align: center;
+}
+
+a.insta {
+    background: radial-gradient(circle at 40% 47%, #fdf497 0.5%, #fdf497 1%, #fd5949 50%, #d6249f 70%, #285AEB 90%);
+    -webkit-background-clip: text;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+
+}
+
+.fa-linkedin {
+    color: #0000ff;
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-square-whatsapp {
+    color: #5ef223;
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-square-facebook {
+    color: #0000ff;
+    font-size: 50px;
+    margin-right: 4px;
+}
+
+.fa-square-instagram {
+    font-size: 50px;
+    margin: 4px;
+}
+
+.fa-paper-plane,
+.fa-square-phone {
+    color: #f22020;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.para {
+    font-size: 18px;
+}
+
+.butn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #f22020;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+nav .fas {
+    display: none;
+}
+
+.butn:hover {
+    background: #f22020;
+}
+
+.butn2 {
+    display: block;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #f22020;
+    margin-top: 10px;
+    padding: 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+.butn2:hover {
+    background: #f22020;
+   
+}
+
+p {
+    line-height: 1.2em;
+    font-size: 18px;
+}
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2f2f2f;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+
+.row {
+    justify-content: center;
+    width: 400px;
+    margin: auto;
+}
+
+.contact-left {
+    width: 400px;
+    border: 2px solid #ff0000;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.contact-right {
+    width: 400px;
+    border: 2px solid #ff0000;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 6px;
+}
+.error-msg{
+    font-size: 20px;
+    color: red;
+}
+#btn-reg{
+    width: 100%;
+    margin-top: 10px;
+}
+#btn-login{
+    width: 100%;
+    margin-top:10px;
+}
+label{
+    text-align: center;
+    font-size: 20px;
+}
+.home-blog{
+    border:2px solid red;
+    padding:20px;
+    margin: auto;
+    margin-bottom: 30px;
+    width:450px;
+    border-radius:20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.blog-info{
+    margin:10px auto;
+    width:450px;
+    border-radius:20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.blog-image{
+    display: block;
+    width:250px;
+    height:250px;
+    border-radius:10%;
+    margin:15px auto;
+}
+.blog-image-content{
+    display: block;
+    width:320px;
+    height:320px;
+    border-radius:10%;
+    margin:15px auto;
+}
+.show-blog{
+    color: black;
+    height: 100%;
+    text-align: center;
+}
+.blog-content{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.7em;
+}
+.fa-thin fa-user{
+    color: white;
+    background-color: white;
+}
+.blog-auth-info{
+    width: 600px;
+    margin: 20px;
+    text-align: center;
+    margin: auto;
+    
+}
+ @media only screen and (max-width:820px) {
+    .logo{
+        display: none;
+        float: left;
+    }
+    nav .fas {
+        display: block;
+        font-size: 45px;
+    }
+
+    nav ul {
+        background-color: #ff7c7c;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: 0.5s;
+        overflow: auto;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        cursor: pointer;
+    }
+
+    .menu {
+        color: #ffffff;
+    }
+
+    .menu:hover {
+        color: #ff004f;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        color: #000000;
+    }
+} 
